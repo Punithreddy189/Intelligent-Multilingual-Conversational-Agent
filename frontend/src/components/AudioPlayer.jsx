@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, Square, Loader2, Play, Pause } from 'lucide-react';
 
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? ''
+  : 'https://intelligent-multilingual-agent.onrender.com';
+
 export default function AudioPlayer({ text, language }) {
   const [loading, setLoading] = useState(false);
   const [playing, setPlaying] = useState(false);
@@ -11,7 +15,7 @@ export default function AudioPlayer({ text, language }) {
     if (!text) return;
     setLoading(true);
     try {
-      const response = await fetch('/tts', {
+      const response = await fetch(`${API_BASE}/tts`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
