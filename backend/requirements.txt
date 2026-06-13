@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-multipart
+python-dotenv
+pyjwt
+passlib[bcrypt]
+deep-translator
+spacy
+gTTS
+PyPDF2
+numpy
+google-generativeai
+pytest
+requests
