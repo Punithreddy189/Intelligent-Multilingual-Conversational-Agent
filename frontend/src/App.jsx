@@ -82,7 +82,7 @@ function AppContent() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/Intelligent-Multilingual-Conversational-Agent">
       <AuthProvider>
         <ChatProvider>
           <AppContent />

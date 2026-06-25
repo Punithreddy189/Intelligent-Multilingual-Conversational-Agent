@@ -5,7 +5,8 @@ import AudioPlayer from '../components/AudioPlayer';
 import Loader from '../components/Loader';
 import { 
   Send, Mic, MicOff, Download, ChevronDown, ChevronUp, 
-  Calculator, Atom, Code, Globe, HelpCircle, AlertCircle
+  Calculator, Atom, Code, Globe, HelpCircle, AlertCircle,
+  GraduationCap
 } from 'lucide-react';
 
 export default function Chatbot() {
