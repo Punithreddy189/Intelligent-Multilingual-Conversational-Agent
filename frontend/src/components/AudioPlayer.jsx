@@ -3,7 +3,7 @@ import { Volume2, Square, Loader2, Play, Pause } from 'lucide-react';
 
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
-  : 'https://intelligent-multilingual-agent.onrender.com';
+  : 'https://intelligent-multilingual-conversational.onrender.com';
 
 export default function AudioPlayer({ text, language }) {
   const [loading, setLoading] = useState(false);

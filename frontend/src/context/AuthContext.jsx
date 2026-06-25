@@ -4,7 +4,7 @@ const AuthContext = createContext(null);
 
 const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
   ? ''
-  : 'https://intelligent-multilingual-agent.onrender.com';
+  : 'https://intelligent-multilingual-conversational.onrender.com';
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
